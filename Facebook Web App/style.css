@@ -1,0 +1,676 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #F0F2F5;
+}
+nav
+{
+    background: #FFFFFF !important;
+   position: fixed !important;
+    width: 100%;
+    z-index:7000000!important; 
+}
+.nav-logo
+{
+    height:60px;
+    width:60px;
+    object-fit: cover;
+    border: solid 2px white;
+    border-radius: 50%;
+ 
+}
+.navbar-nav
+{
+    width: 100%;
+    display: flex !important;
+    justify-content:flex-end!important;
+    
+}
+.nav-img-div
+{
+
+    min-height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    transition: all 0.3s ease;
+    border-radius: 18px;
+   
+}
+.nav-img
+{
+width: 40px;
+height: 40px;
+object-fit: cover;
+    border-radius: 50%;
+}
+.nav-profile-name
+{
+    padding-left: 5px;
+}
+
+.nav-img-div:hover
+{
+    background: rgba(0,0,0,0.1);
+}
+.nav-home-icon
+{
+     min-height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+}
+.home-icon
+{
+width: 40px;
+height: 40px;
+
+    
+}
+.tooltipp {
+  position: relative;
+}
+
+.tooltipp .tooltiptext {
+  visibility: hidden;
+  width:auto;
+  background-color:rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+   top:110%;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+    font-size: 12px;
+}
+
+.tooltipp:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(47, 46, 65,0.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(47, 46, 65,0.4);
+  outline: 0 none;
+}
+
+
+
+
+#profile-i
+{
+    height: 100vh;
+    width: 100%;
+   position: relative;
+}
+.profile-first
+{
+    height: 75%;
+background: #2C2C2F; 
+background: linear-gradient(to right, #2C2C2F, #434343);
+
+
+}
+
+.profile-second
+{
+    height: 25%;
+   
+}
+
+.profile-content
+{
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    background: white;
+    border-radius: 12px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    z-index: 50000;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.profile-img
+{
+    flex: 1;
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+       object-fit: cover;
+    
+    cursor: pointer;
+}
+
+
+
+.profile-about
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90%;
+    padding: 10px; 
+}
+.profile-about p
+{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 600;
+   
+}
+.media-icons li
+{
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+#profile-ii
+{
+    
+    min-height: 100vh;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+  position: relative;
+
+}
+
+
+.intro
+{
+    width:35%;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 8px;
+    position:sticky;
+    top:40%;
+    left: 0;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+   padding: 10px 15px;
+}
+
+.intro h4
+{
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.intro img
+{
+    width: 22px;
+    margin-right: 5px;
+}
+.intro p
+{
+    padding-top: 5px;
+}
+.intro p span
+{
+   
+    font-weight: 700;
+}
+
+
+
+
+.profile-posts
+{
+    width: 62%;
+    min-height: 120vh;
+}
+
+.post-the-post
+{
+    width:100%;
+    height: 10vh;
+    background: #ffff;
+     box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.post-the-post form
+{
+    width: 100%;
+}
+.post-the-post form input
+{
+    
+    cursor: pointer;
+}
+.post-the-post img
+{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.post-popup-background
+{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.post-popup
+{
+    width: 30%;
+    height: auto;
+    background: #ffff;
+     box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: #222222;
+    display: none;
+    
+}
+
+.close-popup
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.close-popup span
+{
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+.close-btn 
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    transform: translateY(-36%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close-btn img
+{
+    width: 16px;
+}
+.close-popup::after
+{
+    content: " ";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.6; 
+}
+
+.popup-profile-img
+{
+    height: 5vh;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.popup-profile-img img
+{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+
+textarea:focus
+{
+     border-color: rgba(47, 46, 65,0.4) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(47, 46, 65,0.4)  !important;
+  outline: 0 none  !important;
+}
+
+.post-img-attach
+{
+    cursor: pointer;
+}
+
+.post-btn
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 6px 20px !important;
+    
+}
+
+.posts-section-post
+{
+     width:100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+   padding: 10px 15px;
+    min-height: 10vh;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.posts-pp
+{
+      width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.post-name
+{
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1px 0px 5px 0px;
+}
+.post-img
+{
+    height: 40vh;
+    width:80%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.edit-div
+{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.edit-div input
+{
+    width: 10vw;
+    margin: 10px 0px;
+}
+
+.liked-people
+{
+     border-color: rgba(47, 46, 65,0.4) !important;
+    background-color:rgba(47, 46, 65) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(47, 46, 65,0.4)  !important;
+  outline: 0 none  !important;
+}
+
+
+.peopleLiked-popup-background
+{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.peopleLiked-popup
+{
+    width: 30%;
+    height: 50vh;
+    background: #ffff;
+     box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: #222222;
+    display: none;
+    
+}
+
+.close-peopleLiked-popup
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.close-peopleLiked-popup span
+{
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+.peopleLiked-close-btn
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    transform: translateY(-36%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.peopleLiked-close-btn img
+{
+    width: 16px;
+}
+.close-peopleLiked-popup::after
+{
+    content: " ";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.6; 
+}
+
+.pointing
+{
+    cursor: pointer;
+}
+
+
+.home-post
+{
+     width:30%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+   padding: 15px 15px;
+    min-height: 10vh;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+
+.home-post-name
+{
+    display: flex;
+    padding-bottom: 20px;
+}
+.home-post-name img
+{
+        width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.home-post-name span
+{
+    color: #222222;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0px 5px 0px;
+}
+
+.home-post-info img
+{
+     height: 40vh;
+    width:100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0px 20px 0px;
+}
+
+.interaction-bar
+{
+    position: relative;
+    width: auto;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.interaction-bar::after
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.3);
+    
+}
+.interaction-bar::before
+{
+    content: " ";
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.3);
+    
+}
+
+
+.interaction-bar p img
+{
+       width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    
+    
+}
+.interaction-bar p 
+{
+   display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.interaction-bar p:hover
+{
+  background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+
+.interaction-bar p:nth-child(2)
+{
+   margin-left: 20px;
+}
+
+.post-fix
+{
+    min-height: 50vh;
+    padding-top: 10vh;
+    padding-left: 10px;
+}
+
+.like-color
+{
+    fill:gray;
+}
